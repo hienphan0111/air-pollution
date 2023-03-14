@@ -1,0 +1,4 @@
+get city: https://documenter.getpostman.com/view/1134062/T1LJjU52#2e131a94-a28e-4cfe-95fe-d10c0e40eae7
+Get air pollution: https://aqicn.org/faq/2015-07-28/air-quality-widget-new-improved-feed/
+API key: a9f162e549927790acab08267ea7f9f2d6a44ac6
+Get country: https://restcountries.com/#endpoints-list-of-codes
