@@ -5,7 +5,7 @@
   <img src="./src/assets/planet.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Space Travelers' Hub</b></h3>
+  <h3><b>Air pollution</b></h3>
 
 </div>
 
