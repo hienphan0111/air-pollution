@@ -1,5 +1,5 @@
 function CityDetail() {
-  return(
+  return (
     <>
     </>
   );

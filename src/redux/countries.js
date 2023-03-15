@@ -9,10 +9,10 @@ export const getCoutries = createAsyncThunk(
     try {
       const res = await axios.get(URL_COUNTRIES);
       return res.data;
-    } catch(e) {
+    } catch (e) {
       throw new Error('Something went wrong', e);
     }
-  }
+  },
 );
 
 const initialState = {
@@ -28,10 +28,10 @@ const countries = createSlice({
   },
   extraReducers(builder) {
     builder
-    .addCase(getCoutries.fulfilled, (status, action) => {
-      console.log(action.payload);
-    })
-  }
+      .addCase(getCoutries.fulfilled, (status, action) => {
+        console.log(action.payload);
+      });
+  },
 });
 
 export default countries.reducer;

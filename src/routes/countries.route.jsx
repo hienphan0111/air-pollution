@@ -3,16 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCoutries } from '../redux/countries';
 
 function Countries() {
-  const { status } = useSelector(state => state.countries);
+  const { status } = useSelector((state) => state.countries);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if(status === 'update') {
+    if (status === 'update') {
       dispatch(getCoutries());
     }
-  }, status)
-  useEffect()
-  return(
+  }, status);
+  useEffect();
+  return (
     <div>
       This is countries page
     </div>
