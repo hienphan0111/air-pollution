@@ -28,8 +28,20 @@ const countries = createSlice({
   },
   extraReducers(builder) {
     builder
-      .addCase(getCoutries.fulfilled, (status, action) => {
-        console.log(action.payload);
+      .addCase(getCoutries.fulfilled, (state, action) => {
+        const countries = action.payload.map((country) => (
+          {
+            id: country.cca2,
+            name: country.name['official'],
+            nameCommon: country.name['common'],
+            flag: country.flags['svg'],
+            region: country.subregion,
+          }
+        ));
+        return {
+          countries,
+          status: 'complete',
+        };
       });
   },
 });

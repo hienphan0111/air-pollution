@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
+    "sass": "^1.59.3",
     "scss": "^0.2.4",
     "vite": "^4.1.0"
   },
