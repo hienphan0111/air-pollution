@@ -53,27 +53,10 @@ export const getAQCities = createAsyncThunk(
         id: cities[index].id,
         aqi: item.aqi,
         time: item.time,
-        forecase: item.forecast.daily.pm25,
+        forecast: item.forecast.daily.pm25,
       }))
     return citiesAQ;
   },
-  // for (const city of cities) {
-  //   console.log(city);
-  //   try {
-  //     const {
-  //       name, latitude, longitude, id,
-  //     } = city;
-  //     const res = await axios.get(`https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${API_KEY}`);
-  //     console.log(res.data);
-  //     const { forecast, aqi, time } = res.data.data;
-  //     const { pm25 } = forecast.daily;
-  //     newCities.push({
-  //       name, id, aqi, time, pm25,
-  //     });
-  //   } catch (e) {
-  //     throw new Error('something went wrong', e);
-  //   }
-  // }
 );
 
 const initialState = {

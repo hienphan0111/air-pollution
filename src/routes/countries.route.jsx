@@ -16,11 +16,20 @@ function Countries() {
 
   return (
     <div className="countries-container">
-      {
-        countries.map((country) => (
-          <CountryCard key={country.id} country={country} />
-        ))
-      }
+      <div className="header">
+        <h1>AIR POLLUTION</h1>
+        <span>the real-time Air Quality</span>
+      </div>
+      <div className="bar">
+        <span>SELECT COUNTRY TO SEE MORE DETAIL</span>
+      </div>
+      <div className="countries">
+        {
+          countries.map((country) => (
+            <CountryCard key={country.id} country={country} />
+          ))
+        }
+      </div>
     </div>
   );
 }

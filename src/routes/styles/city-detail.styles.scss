@@ -1,0 +1,65 @@
+.city-container {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  width: 648px;
+  margin: 5rem auto;
+  padding: 3rem;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .aqi {
+    display: flex;
+    flex-direction: column;
+
+    .aqi-n {
+      width: 380px;
+      height: 280px;
+      border: 1px solid #524f4f59;
+      border-radius: 5px;
+      font-size: 68px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+      color: rgb(255, 255, 255);
+    }
+
+    .aq-title {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  .forecast {
+
+    .fc-table {
+      .fc-head{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-bottom: 1px solid #524f4f59;
+        justify-items: center;
+
+        span {
+          padding: 10px;
+        }
+      }
+
+      .pm25 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        span {
+          padding: 10px;
+        }
+      }
+
+      .pm25:nth-child(2n - 1) {
+        background-color: rgba(199, 224, 221, 0.621);
+      }
+    }
+  }
+}

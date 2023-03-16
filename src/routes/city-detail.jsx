@@ -1,30 +1,36 @@
 import { useSelector } from 'react-redux';
+import aqCheck from '@/utils/aq-check';
 import './styles/city-detail.styles.scss';
 
 function CityDetail() {
   const {
-    name, aqi, time, pm25,
-  } = useSelector((state) => state.cityDetail.cityDetail);
+    name, aqi, time, forecast,
+  } = useSelector((state) => state.cityInfo.cityDetail);
+  const { title, color } = aqCheck(aqi);
+  console.log(name, aqi, forecast);
+  // const { cityDetail } = useSelector((state) => state.cityInfo);
   return (
     <div className="city-container">
       <div className="ct-header">
         <h3>{name}</h3>
       </div>
       <div className="ct-info">
-        <span>{time}</span>
-        <span>
-          AQi:
-          {aqi}
-        </span>
+        <div className="aqi">
+          <span>{time.s}</span>
+          <span className="aqi-n" style={{backgroundColor: color}}>{aqi}</span>
+          <span className="aq-title">{title}</span>
+        </div>
         <div className="forecast">
           <h4>Forecast</h4>
           <div className="fc-table">
-            <span>Date</span>
-            <span>avg</span>
-            <span>min</span>
-            <span>max</span>
+            <div className="fc-head">
+              <span>Date</span>
+              <span>avg</span>
+              <span>min</span>
+              <span>max</span>
+            </div>
             {
-              pm25.map((item) => (
+              forecast.map((item) => (
                 <div key={item.id} className="pm25">
                   <span>{item.day}</span>
                   <span>{item.avg}</span>
