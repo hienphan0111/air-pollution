@@ -6,7 +6,6 @@ import './styles/countries.styles.scss';
 
 function Countries() {
   const { status, countries } = useSelector((state) => state.countries);
-  console.log(status, countries);
   const dispatch = useDispatch();
 
   useEffect(() => {

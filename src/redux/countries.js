@@ -32,9 +32,8 @@ const countries = createSlice({
         const countries = action.payload.map((country) => (
           {
             id: country.cca2,
-            name: country.name['official'],
-            nameCommon: country.name['common'],
-            flag: country.flags['svg'],
+            name: country.name.official,
+            flag: country.flags.svg,
             region: country.subregion,
           }
         ));
