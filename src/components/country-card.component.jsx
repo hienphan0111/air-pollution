@@ -46,7 +46,7 @@ CountryCard.defaultProps = {
 };
 
 CountryCard.propTypes = {
-  country: PropTypes.shapes({
+  country: PropTypes.shape({
     name: PropTypes.string,
     id: PropTypes.string,
     flag: PropTypes.string,

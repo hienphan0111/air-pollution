@@ -7,9 +7,7 @@ describe('city detail state', () => {
   });
 
   it('should handle a todo being added to an city object', () => {
-    const previousState = {
-      
-    };
+    const previousState = { };
     const cityDetail = {
       id: 5,
       name: 'one',
