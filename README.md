@@ -52,6 +52,8 @@ To see the demo version, you can <a href=""> Click here </a>
 
 To get a local copy up and running, follow these steps.
 
+Introduction video about feature of the App. <a href="https://www.loom.com/share/dd62b68443294628abda62698dc78b26"> Click here</a> to check it out.
+
 ### Prerequisites
 
 - IDE(code editor) like: **Vscode**, **Sublime**, etc. 
