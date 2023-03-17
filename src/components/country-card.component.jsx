@@ -1,7 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import Cities from '@/routes/cities.route';
-import { setCountry } from '@/redux/cities';
+import { PropTypes } from 'prop-types';
+import { setCountry } from '../redux/cities';
 import './styles/country-card.styles.scss';
 
 function CountryCard({ country }) {
@@ -10,15 +11,15 @@ function CountryCard({ country }) {
   } = country;
   const dispatch = useDispatch();
 
-  const citiesAccess = (e) => {
-    console.log(e.target);
+  const citiesAccess = () => {
     dispatch(setCountry(id));
   };
 
   return (
     <div className="country-card">
+      <div className="overlay" />
       <Link to="/cities">
-        <div onClick={citiesAccess} className="next-route">
+        <div role="button" tabIndex={0} onClick={citiesAccess} onKeyDown={citiesAccess} className="next-route">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 next-icon">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -34,5 +35,23 @@ function CountryCard({ country }) {
     </div>
   );
 }
+
+CountryCard.defaultProps = {
+  country: {
+    name: '',
+    id: '',
+    flag: '',
+    region: '',
+  },
+};
+
+CountryCard.propTypes = {
+  country: PropTypes.shapes({
+    name: PropTypes.string,
+    id: PropTypes.string,
+    flag: PropTypes.string,
+    region: PropTypes.string,
+  }),
+};
 
 export default CountryCard;

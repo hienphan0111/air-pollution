@@ -38,7 +38,7 @@ export const getAQCities = createAsyncThunk(
     const newCities = cities.map(async (city) => {
       try {
         const {
-          name, latitude, longitude, id,
+          latitude, longitude,
         } = city;
         const res = await axios.get(`https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${API_KEY}`);
         return res.data.data;
@@ -46,15 +46,14 @@ export const getAQCities = createAsyncThunk(
         throw new Error('something went wrong', e);
       }
     });
-    console.log('get')
     const data = await Promise.all(newCities);
     const citiesAQ = data.map((item, index) => ({
-        name: cities[index].name,
-        id: cities[index].id,
-        aqi: item.aqi,
-        time: item.time,
-        forecast: item.forecast.daily.pm25,
-      }))
+      name: cities[index].name,
+      id: cities[index].id,
+      aqi: item.aqi,
+      time: item.time,
+      forecast: item.forecast.daily.pm25,
+    }));
     return citiesAQ;
   },
 );
@@ -72,18 +71,19 @@ const citiesSlice = createSlice({
   reducers: {
     setCountry: (state, action) => {
       const country = action.payload;
-      console.log(country);
-      return {
-        ...state,
-        country,
-      };
+      if (country !== state.country) {
+        return {
+          ...state,
+          country,
+          status: 'updateCities',
+        };
+      }
+      return state;
     },
   },
   extraReducers(builder) {
     builder.addCase(getCities.fulfilled, (state, action) => {
-      const cities = action.payload.filter((item, index) => index < 20);
-      // const cities = action.payload;
-      // console.log(cities);
+      const cities = action.payload.filter((item, index) => index < 50);
       return {
         ...state,
         cities,
@@ -92,7 +92,6 @@ const citiesSlice = createSlice({
     });
     builder.addCase(getAQCities.fulfilled, (state, action) => {
       const citiesAQ = action.payload;
-      console.log(citiesAQ);
       return {
         ...state,
         citiesAQ,

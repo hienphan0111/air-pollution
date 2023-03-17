@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the detail info of city Render detail info of city 1`] = `
+<div
+  className="city-container"
+>
+  <div
+    className="bar-head"
+  >
+    <a
+      href="/cities"
+      onClick={[Function]}
+    >
+      <svg
+        className="w-6 h-6 back-icon"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </a>
+    <span>
+      AIR QUALITY DETAIL
+    </span>
+  </div>
+  <div
+    className="detail-body"
+  >
+    <div
+      className="ct-header"
+    >
+      <h3>
+        one
+      </h3>
+    </div>
+    <div
+      className="ct-info"
+    >
+      <div
+        className="aqi"
+      >
+        <span
+          className="aqi-n"
+          style={
+            {
+              "backgroundColor": "#0c563b",
+            }
+          }
+        >
+          10
+        </span>
+        <span
+          className="aq-title"
+        >
+          Good
+        </span>
+      </div>
+      <div
+        className="forecast"
+      >
+        <h4>
+          PM25 Forecast
+        </h4>
+        <div
+          className="fc-table"
+        >
+          <div
+            className="fc-head"
+          >
+            <span>
+              Date
+            </span>
+            <span>
+              avg
+            </span>
+            <span>
+              min
+            </span>
+            <span>
+              max
+            </span>
+          </div>
+          <div
+            className="pm25"
+          >
+            <span>
+              2023-03-14
+            </span>
+            <span>
+              133
+            </span>
+            <span>
+              90
+            </span>
+            <span>
+              160
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

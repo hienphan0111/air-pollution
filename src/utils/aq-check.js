@@ -32,5 +32,5 @@ export default function aqCheck(aqi) {
       };
     default: break;
   }
-  return undefined;
+  return { title: '', color: '#fff' };
 }

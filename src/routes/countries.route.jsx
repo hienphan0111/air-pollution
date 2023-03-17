@@ -21,7 +21,7 @@ function Countries() {
         <span>the real-time Air Quality</span>
       </div>
       <div className="bar">
-        <span>SELECT COUNTRY TO SEE MORE DETAIL</span>
+        <span>START BY SELECT A COUNTRY TO SEE MORE DETAIL</span>
       </div>
       <div className="countries">
         {
