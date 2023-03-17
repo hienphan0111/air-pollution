@@ -1,0 +1,45 @@
+.cities-container {
+  max-width: 1024px;
+  margin: 5rem auto;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1), 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+  font-family: 'Lato', sans-serif;
+
+  .bar-head {
+    display: flex;
+    align-items: center;
+    background-color: rgba(85, 23, 201, 0.859);
+    color: #fff;
+
+    .back-icon {
+      width: 25px;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .header {
+    background-color: rgba(85, 23, 201, 0.622);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    justify-content: center;
+    color: #fff;
+
+    h1 {
+      margin: 0;
+      padding: 15px;
+    }
+  }
+
+  .bar {
+    background-color: rgba(85, 23, 201, 0.859);
+    color: #fff;
+    padding: 2px;
+    border: 1px solid rgba(85, 23, 201, 0.141);
+  }
+
+  .city-card:nth-child(2n) {
+    background-color: rgba(85, 23, 201, 0.622);
+  }
+}

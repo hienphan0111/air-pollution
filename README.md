@@ -145,6 +145,7 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse
+And I would like to thank Nelson Sakwa on Behance for his design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +153,7 @@ I would like to thank Microverse
 
 ## 📝 License <a name="license"></a>
 
-This project is contributed under [GNU 3.0](./LICENSE.md) licensed.
+This project is contributed under [GNU 3.0](./LICENSE.md) and [Creative commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
