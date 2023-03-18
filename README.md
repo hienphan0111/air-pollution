@@ -36,7 +36,7 @@
 
 The application will allow users check the air quality of the specific city on around the world.
 
-Introduction video about feature of the App. <a href="https://www.loom.com/share/dd62b68443294628abda62698dc78b26"> Click here</a> to check it out.
+Introduction video about feature of the App. <a href="https://loom.com/share/2d6f1487c2f44111a49ab6e3741a4bcc"> Click here</a> to check it out.
 
 ## 🛠 Built With <a name="built-with"></a>
 
