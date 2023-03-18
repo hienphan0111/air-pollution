@@ -32,9 +32,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space traveler's hub <a name="about-project"></a>
+# 📖 Air pollution <a name="about-project"></a>
 
-The application will allow users check the air pollution of the specific city on around the world.
+The application will allow users check the air quality of the specific city on around the world.
+
+Introduction video about feature of the App. <a href="https://loom.com/share/2d6f1487c2f44111a49ab6e3741a4bcc"> Click here</a> to check it out.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,13 +46,14 @@ The application will allow users check the air pollution of the specific city on
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href=""> Click here </a>
+To see the demo version, you can <a href="https://air-pollution-awdvt8pxt-hienphan0111.vercel.app/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
+
 
 ### Prerequisites
 
@@ -145,6 +148,7 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse
+And I would like to thank Nelson Sakwa on Behance for his design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +156,7 @@ I would like to thank Microverse
 
 ## 📝 License <a name="license"></a>
 
-This project is contributed under [GNU 3.0](./LICENSE.md) licensed.
+This project is contributed under [GNU 3.0](./LICENSE.md) and [Creative commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

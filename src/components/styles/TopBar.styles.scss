@@ -1,0 +1,22 @@
+.bar-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(85, 23, 201, 0.859);
+
+  svg {
+    width: 18px;
+    margin: 0 5px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: #fff;
+    }
+  }
+}
