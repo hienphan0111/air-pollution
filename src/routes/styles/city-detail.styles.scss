@@ -22,6 +22,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(85, 23, 201, 0.859);
+    color: #fff;
 
     .aqi {
       display: flex;
@@ -79,8 +81,8 @@
           }
         }
 
-        .pm25:nth-child(2n - 1) {
-          background-color: rgba(199, 224, 221, 0.621);
+        .pm25:nth-child(2n) {
+          background-color: rgba(85, 23, 201, 0.622);
         }
       }
     }

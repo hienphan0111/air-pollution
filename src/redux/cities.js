@@ -1,11 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// const CITIES_URL = 'https://countriesnow.space/api/v0.1/countries/cities';
 const API_KEY = 'a9f162e549927790acab08267ea7f9f2d6a44ac6';
-// const AIR_URL = 'http://api.waqi.info/feed/';
-// const CITY_LOCA = 'https://api.api-ninjas.com/v1/city?name=';
-// const LOCA_KEY = 'mloFqsSPluWQ8UWJ9pJM2w==xej9B1wbh7CIAo74';
 
 const APILAYER = 'https://api.apilayer.com/geo/country/cities/';
 const APILAYER_KEY = 'Zi37M0ZPtfryDFAHnk6lXlzo2tDsrRo2';

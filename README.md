@@ -32,9 +32,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space traveler's hub <a name="about-project"></a>
+# 📖 Air pollution <a name="about-project"></a>
 
-The application will allow users check the air pollution of the specific city on around the world.
+The application will allow users check the air quality of the specific city on around the world.
+
+Introduction video about feature of the App. <a href="https://www.loom.com/share/dd62b68443294628abda62698dc78b26"> Click here</a> to check it out.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,7 +46,7 @@ The application will allow users check the air pollution of the specific city on
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href=""> Click here </a>
+To see the demo version, you can <a href="https://air-pollution-two.vercel.app/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
@@ -52,7 +54,6 @@ To see the demo version, you can <a href=""> Click here </a>
 
 To get a local copy up and running, follow these steps.
 
-Introduction video about feature of the App. <a href="https://www.loom.com/share/dd62b68443294628abda62698dc78b26"> Click here</a> to check it out.
 
 ### Prerequisites
 

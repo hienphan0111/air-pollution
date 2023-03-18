@@ -19,7 +19,7 @@ jest.mock('axios', () => ({
 
 const reactRedux = { useDispatch, useSelector };
 
-describe('Render the detail info of city', () => {
+describe('Display city info on Card', () => {
   
   const useSelectorMock = jest.spyOn(reactRedux, 'useSelector')
   const useDispatchMock = jest.spyOn(reactRedux, 'useDispatch')
@@ -55,8 +55,16 @@ describe('Render the detail info of city', () => {
         </MemoryRouter>
       </Provider>
     ).toJSON();
+    // render(
+    //   <Provider store={store}>
+    //     <MemoryRouter>
+    //       <CityCard key={city.id} city={city}/>
+    //     </MemoryRouter>
+    //   </Provider>
+    // )
   
     expect(card).toMatchSnapshot();
+    // expect(screen.getByText('10')).toHaveDisplayValue('10');
 
   })
 

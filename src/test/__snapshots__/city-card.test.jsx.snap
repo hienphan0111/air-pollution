@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render the detail info of city Render detail info of city 1`] = `
+exports[`Display city info on Card Render detail info of city 1`] = `
 <div
   className="city-card"
 >
@@ -42,6 +42,9 @@ exports[`Render the detail info of city Render detail info of city 1`] = `
       <div
         className="next-city"
         onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <svg
           className="w-6 h-6 next-icon"
