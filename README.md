@@ -46,7 +46,7 @@ Introduction video about feature of the App. <a href="https://www.loom.com/share
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href="https://air-pollution-two.vercel.app/"> Click here </a>
+To see the demo version, you can <a href="https://air-pollution-awdvt8pxt-hienphan0111.vercel.app/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
